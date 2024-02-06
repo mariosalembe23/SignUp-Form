@@ -1,12 +1,12 @@
 function App() {
   return (
     <main className="w-full h-screen flex items-center justify-center">
-      <div className="container_card  max-w-4xl w-full grid shadow-lg grid-cols-2">
-        <div className="h-96 bg-[url('/img/patterns.svg')] rounded-l-lg back_patterns"></div>
-        <div className="p-5 bg-[#fff] rounded-r-md">
+      <div className="container_card  max-w-4xl w-full grid items-center shadow-lg grid-cols-2">
+        <div className="h-[28rem] bg-[url('/img/patterns.svg')] rounded-l-lg back_patterns"></div>
+        <div className="p-5 h-[28rem] bg-[#fff] rounded-r-md">
           <header className="text-center flex flex-col justify-center">
-            <a href="#" className=" text-xl text-indigo-400 font-medium">
-              Morphosis
+            <a href="#" className=" text-xl text-zinc-500 font-medium">
+              Sign Up
             </a>
             <small className="text-zinc-400">
               Focados em Proteger seus Dados
@@ -27,7 +27,7 @@ function App() {
                     type="email"
                     name="email"
                     id="email"
-                    className="w-full px-3 py-2.5 outline-none transition-all focus:ring-2 ring-zinc-300 rounded bg-gray-100 placeholder:text-zinc-500 "
+                    className="w-full font-['Inter'] px-3 py-2.5 outline-none transition-all focus:ring-2 ring-zinc-300 rounded bg-gray-100 placeholder:text-zinc-500 "
                     placeholder="mario@gmail.com"
                   />
                 </div>
@@ -42,9 +42,25 @@ function App() {
                     type="password"
                     name="password"
                     id="password"
-                    className="w-full px-3 py-2.5 outline-none transition-all focus:ring-2 ring-zinc-300 rounded bg-gray-100 placeholder:text-zinc-500 "
+                    className="w-full font-['Inter'] px-3 py-2.5 outline-none transition-all focus:ring-2 ring-zinc-300 rounded bg-gray-100 placeholder:text-zinc-500 "
                     placeholder="*********"
                   />
+                </div>
+                <div className="">
+                  <div className="progress_password mb-1 w-full h-2 bg-zinc-200 rounded-full overflow-hidden">
+                    <div className="status_progress h-full w-1/2 bg-amber-500 rounded-full"></div>
+                  </div>
+                  <small className="status_progress text-zinc-500">
+                    Password Fraca
+                  </small>
+                </div>
+                <div>
+                  <button
+                    type="button"
+                    className="w-full bg-indigo-600 transition-all hover:bg-indigo-700 py-3 rounded text-white font-medium cursor-pointer "
+                  >
+                    Cadastrar
+                  </button>
                 </div>
               </div>
             </form>
