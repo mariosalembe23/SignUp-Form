@@ -3,7 +3,6 @@ import React, { useEffect, useRef, useState } from "react";
 function App() {
   const [controllerInput, setControllerInput] = useState(false);
   const progressContent = useRef<HTMLDivElement>(null);
-  const inputEmail = useRef<HTMLInputElement>(null);
   const [controllerProgress, setControllerProgress] = useState(0);
   const [statusPassword, setStatusPassowrd] = useState("");
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
@@ -27,7 +26,7 @@ function App() {
     if (
       ValueInput !== "" &&
       controllerProgress > 35 &&
-      controllerProgress < 100
+      controllerProgress <= 100
     ) {
       setIsButtonDisabled(false);
     } else {
@@ -55,15 +54,15 @@ function App() {
   }, [controllerProgress]);
 
   return (
-    <main className="w-full h-screen flex items-center justify-center">
-      <div className="container_card  max-w-4xl w-full grid items-center shadow-lg grid-cols-2">
-        <div className="h-[28rem] bg-[url('/img/patterns.svg')] rounded-l-lg back_patterns"></div>
+    <main className="w-full h-screen flex paisagem-tablet:items-center items-start justify-center">
+      <div className="container_card  max-w-4xl w-full grid items-center paisagem-tablet:shadow-lg grid-cols-1 paisagem-tablet:grid-cols-2">
+        <div className="paisagem-tablet:h-[28rem] h-[15rem]  bg-[url('/img/patterns.svg')] rounded-l-lg back_patterns"></div>
         <div className="p-6 h-[28rem] bg-[#fff] rounded-r-md">
           <header className="text-center flex flex-col justify-center">
-            <a href="#" className=" text-xl text-zinc-500 font-medium">
+            <h1 className=" text-2xl text-zinc-500 font-medium">
               Sign Up
-            </a>
-            <small className="text-zinc-400">
+            </h1>
+            <small className="text-zinc-600">
               Focados em Proteger seus Dados
             </small>
           </header>
@@ -74,12 +73,11 @@ function App() {
                 <div className="input_group space-y-3 flex flex-col">
                   <label
                     htmlFor="email"
-                    className="text-zinc-500 font-ligt font-['Inter'] px-3"
+                    className="text-zinc-600 font-ligt font-['Inter'] px-3"
                   >
                     E-mail
                   </label>
                   <input
-                    ref={inputEmail}
                     onChange={(event) => setValueInput(event.target.value)}
                     type="email"
                     name="email"
@@ -91,7 +89,7 @@ function App() {
                 <div className="input_group space-y-3 flex flex-col">
                   <label
                     htmlFor="password"
-                    className="text-zinc-500 font-ligt font-['Inter'] px-3"
+                    className="text-zinc-600 font-ligt font-['Inter'] px-3"
                   >
                     Password
                   </label>
