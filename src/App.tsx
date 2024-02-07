@@ -59,9 +59,7 @@ function App() {
         <div className="paisagem-tablet:h-[28rem] h-[15rem]  bg-[url('/img/patterns.svg')] rounded-l-lg back_patterns"></div>
         <div className="p-6 h-[28rem] bg-[#fff] rounded-r-md">
           <header className="text-center flex flex-col justify-center">
-            <h1 className=" text-2xl text-zinc-500 font-medium">
-              Sign Up
-            </h1>
+            <h1 className=" text-2xl text-zinc-500 font-medium">Sign Up</h1>
             <small className="text-zinc-600">
               Focados em Proteger seus Dados
             </small>
@@ -102,7 +100,7 @@ function App() {
                     placeholder="*********"
                   />
                 </div>
-                <div className="">
+                <div>
                   <div>
                     <div className="progress_password mb-1 w-full h-2 bg-zinc-200 rounded-full overflow-hidden">
                       <div

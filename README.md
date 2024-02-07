@@ -1,30 +1,41 @@
-# React + TypeScript + Vite
+# Sign Up Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um Formulário de Cadastro com Validações e animações para Orientar o Usuário.
 
-Currently, two official plugins are available:
+## 🚀 Começando
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
-## Expanding the ESLint configuration
+### 📋 Pré-requisitos
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Você Precisa ter o node e o npm instalados em sua máquina.
+Por Padrão o npm vem junto com o node na sua instalação.
+Consulte o site Oficial - [NodeJS](https://nodejs.org/en)
 
-- Configure the top-level `parserOptions` property like this:
+### 🔧 Instalação
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+Você precisará instalar os pacotes do node, neste caso o node_modules:
+
+Execute o Comando
+
+```
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Depois Execute o script para Inicializar a Aplicação
+
+```
+npm run dev
+```
+
+## 🛠️ Construído com
+
+Mencione as ferramentas que você usou para criar seu projeto
+
+- [Vitejs](https://vitejs.dev/) - O framework web usado
+- [ReactJS](https://react.dev/) - Gerente de Dependência
+- [TailwindCSS](https://tailwindcss.com/) - Usada para gerar RSS
+
+---
+
+⌨️ com ❤️ por [Mário Salembe](https://gist.github.com/mariosalembe23) 😊
